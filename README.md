@@ -1,1 +1,2 @@
-# This repo is Vikrant's digital resume.
+# About
+This repo is Vikrant Bhurke's digital resume.
