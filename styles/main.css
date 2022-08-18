@@ -197,6 +197,7 @@ a {
 
   #wrapper--hero {
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 1em;
   }
@@ -204,10 +205,6 @@ a {
   #profile-pic {
     width: 200px;
     height: 200px;
-  }
-
-  #wrapper--hero {
-    flex-direction: column;
   }
 
   .card--work-history {
