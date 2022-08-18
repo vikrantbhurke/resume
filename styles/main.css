@@ -1,187 +1,217 @@
-@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap");
 
-:root{
-    --mainTextColor-light:#000;
-    --secondaryTextColor-light:rgb(51 51 51);
-    --mainLinkColor-light:#0da2b8;
-    --mainBorderColor-light:rgb(218, 218, 218);
-    --mainBgColor-light:rgb(249, 250,251);
+:root {
+  --mainTextColor-light: #000;
+  --secondaryTextColor-light: rgb(51 51 51);
+  --mainLinkColor-light: #238636;
+  --mainBorderColor-light: rgb(218, 218, 218);
+  --mainBgColor-light: rgb(249, 250, 251);
 
-    --mainTextColor-dark:#fff;
-    --secondaryTextColor-dark:#adb0b1;
-    --mainLinkColor-dark:rgb(30, 190,214);
-    --mainBorderColor-dark:#2b3031;
-    --mainBgColor-dark:#131415;
-    
-    --mainTextColor:var(--mainTextColor-dark);
-    --secondaryTextColor:var(--secondaryTextColor-dark);
-    --mainLinkColor:var(--mainLinkColor-dark);
-    --mainBorderColor:var(--mainBorderColor-dark);
-    --mainBgColor:var(--mainBgColor-dark);
+  --mainTextColor-dark: #fff;
+  --secondaryTextColor-dark: #adb0b1;
+  --mainLinkColor-dark: #2ca72c;
+  --mainBorderColor-dark: #2b3031;
+  --mainBgColor-dark: #131415;
 
+  --mainTextColor: var(--mainTextColor-dark);
+  --secondaryTextColor: var(--secondaryTextColor-dark);
+  --mainLinkColor: var(--mainLinkColor-dark);
+  --mainBorderColor: var(--mainBorderColor-dark);
+  --mainBgColor: var(--mainBgColor-dark);
+  /* aqua - rgb(30, 190,214) */
 }
 
-
-*{
-    font-family: 'Readex Pro';
-    line-height: 1.5em;
-    box-sizing: border-box;
-    color: var(--mainTextColor);
-    
+* {
+  font-family: "Readex Pro";
+  line-height: 1.5em;
+  box-sizing: border-box;
+  color: var(--mainTextColor);
 }
 
-body{
-    background-color: var(--mainBgColor);            
+body {
+  background-color: var(--mainBgColor);
 }
 
-p, span, li{
-    color: var(--secondaryTextColor);
-    font-size: 1em;
+p,
+span,
+li {
+  color: var(--secondaryTextColor);
+  font-size: 1em;
 }
 
-a{
-    text-decoration: none;
-    color: var(--mainLinkColor);
-    font-weight: 500;
+a {
+  text-decoration: none;
+  color: var(--secondaryTextColor);
+  font-weight: 500;
 }
 
-li{
-    line-height: 1.9em;
+a:hover {
+  transition: 0.3s;
+  color: yellow;
 }
 
-#container--main{
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 1em;
+li {
+  line-height: 1.9em;
 }
 
-.section--page{
-    padding-top: 1em;
-    padding-bottom: 1em;
+#container--main {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1em;
 }
 
-#wrapper--hero{
+.section--page {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+#wrapper--hero {
+  display: flex;
+  align-items: center;
+  gap: 4em;
+}
+
+#bio,
+a {
+  font-weight: 300;
+}
+
+#user-name {
+  font-size: 48px;
+  line-height: 1em;
+}
+
+.image--section {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 4em;
 }
 
-#bio, a{
-    font-weight: 300;
+#profile--pic {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
-#user-name{
-    font-size: 48px;
-    line-height: 1em;
+.toggler--slider {
+    margin: 10px;
+    width: 25px;
+    height: 13px;
+    background-color: #2B283A;
+    border-radius: 2rem;
+    margin-inline: 7px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid black;
+    box-sizing: content-box;
 }
 
-#profile-pic{
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
+.toggler--slider--circle {
+    height: 13px;
+    width: 13px;
+    background-color: white;
     border-radius: 50%;
 }
 
-#email, #phone{
-    color: var(--mainTextColor);
+#email,
+#phone {
+  color: var(--mainTextColor);
 }
 
-#socials--list{
-    display: flex;
-    justify-content: space-between;
-    column-gap: 1em;
-    flex-wrap: wrap;
+#socials--list {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 1em;
+  flex-wrap: wrap;
 }
 
-#socials--list a{
-    font-weight: 300;
-    color: var(--secondaryTextColor);
-    font-size: 0.9em;
-    transition: 0.3s;
+#socials--list a {
+  font-weight: 300;
+  color: var(--secondaryTextColor);
+  font-size: 0.9em;
+  transition: 0.3s;
 }
 
-#socials--list a:hover{
-    font-weight: 100;
-    color: var(--mainLinkColor);
-    font-size: 0.9em;
+#socials--list a:hover {
+  font-weight: 100;
+  color: yellow;
+  font-size: 0.9em;
 }
 
-#qualifications--list{
-    list-style: none;
+#wrapper--techstack__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  font-size: 0.9em;
 }
 
-#wrapper--techstack__items{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
-    font-size: 0.9em;
-}
-
-.card--techstack{
-    border: 1px solid var(--mainBorderColor);
-    border-radius: 5px;
-    padding: 0.5em 1em;
-    align-items: center;
+.card--techstack {
+  border: 1px solid var(--mainBorderColor);
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  align-items: center;
 }
 
 .projects {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
-.card--project{
+.card--project {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.card--project a {
+  color: var(--mainTextColor);
+}
+
+.card--project a:hover {
+  color: yellow;
+}
+
+.card--work-history {
+  margin-top: 3em;
+  margin-bottom: 3em;
+  padding-left: 2em;
+}
+
+.line-break {
+  background-color: var(--mainBorderColor);
+  height: 1px;
+}
+
+.colored-bold-text {
+  font-weight: bold;
+  color: var(--mainLinkColor-dark);
+}
+
+@media (max-width: 600px) {
+  .section--page {
     padding-top: 1em;
     padding-bottom: 1em;
-}
+  }
 
-.card--project a{
-    color: var(--mainTextColor);
+  #wrapper--hero {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
 
-    transition: 0.3s;
-}
+  #profile-pic {
+    width: 200px;
+    height: 200px;
+  }
 
-.card--project a:hover{
-    color: rgb(30, 190,214);
+  #wrapper--hero {
+    flex-direction: column;
+  }
 
-}
-
-.card--work-history{
-    border-left: 1px solid var(--mainBorderColor);
-    margin-top: 3em;
-    margin-bottom: 3em;
-    padding-left: 2em;
-}
-
-.line-break{
-    background-color: var(--mainBorderColor);
-    height: 1px;
-}
-
-
-@media(max-width:600px){
-
-    .section--page{
-        padding-top: 1em;
-        padding-bottom: 1em;
-    }
-
-    #wrapper--hero{
-        display: flex;
-        align-items: center;
-        gap: 1em;
-    }
-
-    #profile-pic{
-        width: 200px;
-        height: 200px;
-    }
-
-    #wrapper--hero{
-        flex-direction: column;
-    }
-
-    .card--work-history{
-        border-left: none;
-        padding-left: 0;
-    }
+  .card--work-history {
+    border-left: none;
+    padding-left: 0;
+  }
 }
