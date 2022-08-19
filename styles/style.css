@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap");
+:root {
+  --primary-text: #000;
+  --secondary-text: rgb(51 51 51);
+  --link: mediumblue;
+  --link-hover: dodgerblue;
+  --border: rgb(218, 218, 218);
+  --background: rgb(249, 250, 251);
+}
+
+.dark {
+  --primary-text: #fff;
+  --secondary-text: #adb0b1;
+  --link: #2ca72c;
+  --link-hover: palegreen;
+  --border: rgb(51 51 51);
+  --background: #131415;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--primary-text);
+}
+
+* {
+  font-family: "Readex Pro";
+  line-height: 1.5em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: var(--primary-text);
+}
+
+p,
+span,
+li {
+  color: var(--secondary-text);
+  font-size: 1em;
+}
+
+a {
+  font-family: "Readex Pro";
+  text-decoration: none;
+  color: var(--secondary-text);
+}
+
+a:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: var(--link-hover);
+}
+
+li {
+  line-height: 1.9em;
+}
+
+#container--main {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.section--page {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+#wrapper--hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4em;
+}
+
+#user-name {
+  font-size: 36px;
+  line-height: 1em;
+}
+
+.image--section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#profile--pic {
+  width: 150px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+#toggler--slider {
+  margin: 20px;
+  width: 25px;
+  height: 13px;
+  background-color: var(--secondary-text);
+  border-radius: 2rem;
+  margin-inline: 7px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid black;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+body.dark #toggler--slider {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#toggler--slider--circle {
+  height: 13px;
+  width: 13px;
+  background-color: var(--background);
+  border-radius: 50%;
+}
+
+#email,
+#phone {
+  color: var(--primary-text);
+}
+
+#socials--list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 1em;
+          column-gap: 1em;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#socials--list a {
+  font-weight: 300;
+  color: var(--secondary-text);
+  font-size: 0.9em;
+}
+
+#socials--list a:hover {
+  font-weight: 100;
+  color: var(--link-hover);
+  font-size: 0.9em;
+}
+
+#wrapper--techstack__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1em;
+  font-size: 0.9em;
+}
+
+.card--techstack {
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.card--project {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.card--project a {
+  color: var(--primary-text);
+}
+
+.card--project a:hover {
+  color: var(--link-hover);
+}
+
+.card--work-history {
+  margin-top: 3em;
+  margin-bottom: 3em;
+  padding-left: 2em;
+}
+
+.company a {
+  color: var(--link);
+}
+
+.company a:hover {
+  color: var(--link-hover);
+}
+
+.line-break {
+  background-color: var(--border);
+  height: 1px;
+}
+
+.colored-bold-text {
+  font-weight: bold;
+  color: var(--link);
+}
+
+@media (max-width: 600px) {
+  .section--page {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  #wrapper--hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1em;
+  }
+  #profile-pic {
+    width: 200px;
+    height: 200px;
+  }
+  .card--work-history {
+    border-left: none;
+    padding-left: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

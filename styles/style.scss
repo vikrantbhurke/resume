@@ -1,53 +1,51 @@
 @import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap");
 
 :root {
-  --mainTextColor-light: #000;
-  --secondaryTextColor-light: rgb(51 51 51);
-  --mainLinkColor-light: #238636;
-  --mainBorderColor-light: rgb(218, 218, 218);
-  --mainBgColor-light: rgb(249, 250, 251);
+  --primary-text: #000;
+  --secondary-text: rgb(51 51 51);
+  --link: mediumblue;
+  --link-hover: dodgerblue;
+  --border: rgb(218, 218, 218);
+  --background: rgb(249, 250, 251);
+}
 
-  --mainTextColor-dark: #fff;
-  --secondaryTextColor-dark: #adb0b1;
-  --mainLinkColor-dark: #2ca72c;
-  --mainBorderColor-dark: #2b3031;
-  --mainBgColor-dark: #131415;
+.dark {
+  --primary-text: #fff;
+  --secondary-text: #adb0b1;
+  --link: #2ca72c;
+  --link-hover: palegreen;
+  --border: rgb(51 51 51);
+  --background: #131415;
+}
 
-  --mainTextColor: var(--mainTextColor-dark);
-  --secondaryTextColor: var(--secondaryTextColor-dark);
-  --mainLinkColor: var(--mainLinkColor-dark);
-  --mainBorderColor: var(--mainBorderColor-dark);
-  --mainBgColor: var(--mainBgColor-dark);
-  /* aqua - rgb(30, 190,214) */
+body {
+  background-color: var(--background);
+  color: var(--primary-text);
 }
 
 * {
   font-family: "Readex Pro";
   line-height: 1.5em;
   box-sizing: border-box;
-  color: var(--mainTextColor);
-}
-
-body {
-  background-color: var(--mainBgColor);
+  color: var(--primary-text);
 }
 
 p,
 span,
 li {
-  color: var(--secondaryTextColor);
+  color: var(--secondary-text);
   font-size: 1em;
 }
 
 a {
+  font-family: "Readex Pro";
   text-decoration: none;
-  color: var(--secondaryTextColor);
-  font-weight: 500;
+  color: var(--secondary-text);
 }
 
 a:hover {
   transition: 0.3s;
-  color: yellow;
+  color: var(--link-hover);
 }
 
 li {
@@ -71,11 +69,6 @@ li {
   gap: 4em;
 }
 
-#bio,
-a {
-  font-weight: 300;
-}
-
 #user-name {
   font-size: 36px;
   line-height: 1em;
@@ -94,11 +87,11 @@ a {
   border-radius: 50%;
 }
 
-.toggler--slider {
-    margin: 10px;
+#toggler--slider {
+    margin: 20px;
     width: 25px;
     height: 13px;
-    background-color: #2B283A;
+    background-color: var(--secondary-text);
     border-radius: 2rem;
     margin-inline: 7px;
     cursor: pointer;
@@ -109,16 +102,20 @@ a {
     box-sizing: content-box;
 }
 
-.toggler--slider--circle {
+body.dark #toggler--slider { 
+  justify-content: flex-end;
+}
+
+#toggler--slider--circle {
     height: 13px;
     width: 13px;
-    background-color: white;
+    background-color: var(--background);
     border-radius: 50%;
 }
 
 #email,
 #phone {
-  color: var(--mainTextColor);
+  color: var(--primary-text);
 }
 
 #socials--list {
@@ -130,14 +127,13 @@ a {
 
 #socials--list a {
   font-weight: 300;
-  color: var(--secondaryTextColor);
+  color: var(--secondary-text);
   font-size: 0.9em;
-  transition: 0.3s;
 }
 
 #socials--list a:hover {
   font-weight: 100;
-  color: yellow;
+  color: var(--link-hover);
   font-size: 0.9em;
 }
 
@@ -149,7 +145,7 @@ a {
 }
 
 .card--techstack {
-  border: 1px solid var(--mainBorderColor);
+  border: 1px solid var(--border);
   border-radius: 5px;
   padding: 0.5em 1em;
   align-items: center;
@@ -166,11 +162,11 @@ a {
 }
 
 .card--project a {
-  color: var(--mainTextColor);
+  color: var(--primary-text);
 }
 
 .card--project a:hover {
-  color: yellow;
+  color: var(--link-hover);
 }
 
 .card--work-history {
@@ -179,14 +175,23 @@ a {
   padding-left: 2em;
 }
 
+.company a {
+  color: var(--link);
+}
+
+.company a:hover {
+  color: var(--link-hover);
+}
+
+
 .line-break {
-  background-color: var(--mainBorderColor);
+  background-color: var(--border);
   height: 1px;
 }
 
 .colored-bold-text {
   font-weight: bold;
-  color: var(--mainLinkColor-dark);
+  color: var(--link);
 }
 
 @media (max-width: 600px) {
