@@ -212,6 +212,11 @@ body.dark #toggler--slider {
     height: 200px;
   }
 
+  #user-name {
+    display: flex;
+    justify-content: center;
+  }
+
   .card--work-history {
     border-left: none;
     padding-left: 0;
