@@ -1,16 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap");
 :root {
   --primary-text: #000;
-  --secondary-text: rgb(51 51 51);
+  --secondary-text: #333;
   --link: #0050FF;
   --link-hover: dodgerblue;
   --border: rgb(218, 218, 218);
-  --background: rgb(249, 250, 251);
+  --background: #fff;
 }
 
 .dark {
   --primary-text: #fff;
-  --secondary-text: #adb0b1;
+  --secondary-text: #ccc;
   --link: #2ca72c;
   --link-hover: palegreen;
   --border: rgb(51 51 51);
@@ -85,6 +85,10 @@ li {
   align-items: flex-end;
 }
 
+.metadata > * {
+  margin: 0;
+}
+
 #toggler--slider {
   margin: 20px;
   width: 25px;
@@ -122,13 +126,13 @@ body.dark #toggler--slider {
 #socials--list a {
   font-weight: 300;
   color: var(--secondary-text);
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 #socials--list a:hover {
   font-weight: 100;
   color: var(--link-hover);
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 .certificate--date,
