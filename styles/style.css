@@ -25,8 +25,7 @@ body {
 * {
   font-family: "Readex Pro";
   line-height: 1.5em;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   color: var(--primary-text);
 }
 
@@ -44,7 +43,6 @@ a {
 }
 
 a:hover {
-  -webkit-transition: 0.3s;
   transition: 0.3s;
   color: var(--link-hover);
 }
@@ -65,13 +63,15 @@ li {
 }
 
 #wrapper--hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 4em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #user-name {
@@ -79,25 +79,10 @@ li {
   line-height: 1em;
 }
 
-.image--section {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.metadata {
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#profile--pic {
-  width: 150px;
-  height: 150px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 50%;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 #toggler--slider {
@@ -108,24 +93,15 @@ li {
   border-radius: 2rem;
   margin-inline: 7px;
   cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-start;
+  align-items: center;
   border: 1px solid black;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
 }
 
 body.dark #toggler--slider {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 #toggler--slider--circle {
@@ -135,22 +111,12 @@ body.dark #toggler--slider {
   border-radius: 50%;
 }
 
-#email,
-#phone {
-  color: var(--primary-text);
-}
-
 #socials--list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-column-gap: 1em;
-          column-gap: 1em;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-between;
+  -moz-column-gap: 1em;
+       column-gap: 1em;
+  flex-wrap: wrap;
 }
 
 #socials--list a {
@@ -165,31 +131,15 @@ body.dark #toggler--slider {
   font-size: 0.9em;
 }
 
-#wrapper--techstack__items {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.certificate--date,
+.work--date {
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 1em;
-  font-size: 0.9em;
-}
-
-.card--techstack {
-  border: 1px solid var(--border);
-  border-radius: 5px;
-  padding: 0.5em 1em;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
 }
 
 .projects {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 .card--project {
@@ -209,10 +159,6 @@ body.dark #toggler--slider {
   margin-top: 3em;
   margin-bottom: 3em;
   padding-left: 2em;
-}
-
-.company a {
-  color: var(--link);
 }
 
 .company a:hover {
@@ -235,16 +181,9 @@ body.dark #toggler--slider {
     padding-bottom: 1em;
   }
   #wrapper--hero {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
     gap: 1em;
   }
   #profile-pic {
@@ -252,16 +191,11 @@ body.dark #toggler--slider {
     height: 200px;
   }
   #user-name {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .card--work-history {
     border-left: none;
     padding-left: 0;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

@@ -65,8 +65,14 @@ li {
 
 #wrapper--hero {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 4em;
+}
+
+.user-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #user-name {
@@ -74,17 +80,10 @@ li {
   line-height: 1em;
 }
 
-.image--section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#profile--pic {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
+.metadata {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 #toggler--slider {
@@ -113,11 +112,6 @@ body.dark #toggler--slider {
     border-radius: 50%;
 }
 
-#email,
-#phone {
-  color: var(--primary-text);
-}
-
 #socials--list {
   display: flex;
   justify-content: space-between;
@@ -137,18 +131,10 @@ body.dark #toggler--slider {
   font-size: 0.9em;
 }
 
-#wrapper--techstack__items {
+.certificate--date, 
+.work--date {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
-  font-size: 0.9em;
-}
-
-.card--techstack {
-  border: 1px solid var(--border);
-  border-radius: 5px;
-  padding: 0.5em 1em;
-  align-items: center;
+  justify-content: space-between;
 }
 
 .projects {
@@ -173,10 +159,6 @@ body.dark #toggler--slider {
   margin-top: 3em;
   margin-bottom: 3em;
   padding-left: 2em;
-}
-
-.company a {
-  color: var(--link);
 }
 
 .company a:hover {
