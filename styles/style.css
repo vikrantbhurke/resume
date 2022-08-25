@@ -2,7 +2,7 @@
 :root {
   --primary-text: #000;
   --secondary-text: #333;
-  --link: #0050FF;
+  --link: #0050ff;
   --link-hover: dodgerblue;
   --border: rgb(218, 218, 218);
   --background: #fff;
@@ -135,8 +135,11 @@ body.dark #toggler--slider {
   font-size: 1em;
 }
 
-.certificate--date,
-.work--date {
+#qualifications--list .date {
+  text-align: end;
+}
+#qualifications--list .certificate--date,
+#qualifications--list .work--date {
   display: flex;
   justify-content: space-between;
 }
@@ -180,6 +183,9 @@ body.dark #toggler--slider {
 }
 
 @media (max-width: 600px) {
+  #container--main {
+    margin-right: 20px;
+  }
   .section--page {
     padding-top: 1em;
     padding-bottom: 1em;
@@ -190,16 +196,35 @@ body.dark #toggler--slider {
     align-items: center;
     gap: 1em;
   }
-  #profile-pic {
-    width: 200px;
-    height: 200px;
-  }
   #user-name {
     display: flex;
     justify-content: center;
   }
+  .metadata {
+    align-items: center;
+  }
+  #socials--list, .line-break {
+    margin: 0 0 0 20px;
+  }
   .card--work-history {
     border-left: none;
     padding-left: 0;
+  }
+  #qualifications--list .certificate {
+    max-width: 180px;
+  }
+  h1,
+h2,
+h3 {
+    margin: 1rem 0 0 20px;
+    text-align: center;
+  }
+  div,
+a,
+p,
+span,
+li {
+    color: var(--secondary-text);
+    font-size: 0.8rem;
   }
 }/*# sourceMappingURL=style.css.map */
