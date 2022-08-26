@@ -42,7 +42,7 @@ a {
   color: var(--secondary-text);
 }
 
-a:hover {
+a:hover, .strong--link:hover {
   transition: 0.3s;
   color: var(--link-hover);
 }
@@ -124,6 +124,7 @@ body.dark #toggler--slider {
 }
 
 #socials--list a {
+  font-family: "Readex Pro";
   font-weight: 300;
   color: var(--secondary-text);
   font-size: 1em;
