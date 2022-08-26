@@ -135,6 +135,9 @@ body.dark #toggler--slider {
   font-size: 1em;
 }
 
+#qualifications--list .certificate p {
+  margin: 0;
+}
 #qualifications--list .date {
   text-align: end;
 }
@@ -149,17 +152,8 @@ body.dark #toggler--slider {
   justify-content: space-around;
 }
 
-.card--project {
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
-
-.card--project a {
-  color: var(--primary-text);
-}
-
-.card--project a:hover {
-  color: var(--link-hover);
+.card--project ul {
+  margin-top: 0;
 }
 
 .card--work-history {
@@ -205,6 +199,9 @@ body.dark #toggler--slider {
   }
   #socials--list, .line-break {
     margin: 0 0 0 20px;
+  }
+  .card--project ul {
+    margin-top: 1rem;
   }
   .card--work-history {
     border-left: none;

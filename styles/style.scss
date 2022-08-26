@@ -136,6 +136,10 @@ body.dark #toggler--slider {
 }
 
 #qualifications--list {
+  .certificate p {
+    margin: 0;
+  } 
+
   .date {
     text-align: end;
   }
@@ -153,16 +157,9 @@ body.dark #toggler--slider {
 }
 
 .card--project {
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
-
-.card--project a {
-  color: var(--primary-text);
-}
-
-.card--project a:hover {
-  color: var(--link-hover);
+  ul {
+    margin-top: 0;
+  }
 }
 
 .card--work-history {
@@ -213,6 +210,12 @@ body.dark #toggler--slider {
 
   #socials--list, .line-break {
     margin: 0 0 0 20px;
+  }
+
+  .card--project {
+    ul {
+      margin-top: 1rem;
+    }
   }
 
   .card--work-history {
