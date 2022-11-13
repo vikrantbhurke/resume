@@ -65,8 +65,14 @@ li {
 
 #wrapper--hero {
   display: flex;
+  // flex-direction: column;
+  // Activate flex-direction only when downloading PDF Resume
   justify-content: space-between;
   align-items: center;
+}
+
+.colored-bold-text {
+  text-align: center;
 }
 
 .user-name {
@@ -116,6 +122,14 @@ body.dark #toggler--slider {
   border-radius: 50%;
 }
 
+.icon {
+  width: 1.2rem;
+}
+
+.redux-saga-icon {
+  width: 1.8rem;
+}
+
 #socials--list {
   display: flex;
   justify-content: space-between;
@@ -139,14 +153,14 @@ body.dark #toggler--slider {
 #qualifications--list {
   .certificate p {
     margin: 0;
+    width: 85%;
   } 
 
   .date {
     text-align: end;
   }
 
-  .certificate--date,
-  .work--date {
+  .certificate--title--date {
     display: flex;
     justify-content: space-between;
   }
@@ -157,10 +171,20 @@ body.dark #toggler--slider {
   justify-content: space-around;
 }
 
-.card--project {
+.card--project, .card--languages {
   ul {
     margin-top: 0;
   }
+}
+
+.card--languages {
+  margin-top: 0.5rem; 
+  // Activate only when downloading PDF Resume 
+  
+  li {
+    list-style-type: none;
+  }
+
 }
 
 .card--work-history {
@@ -224,11 +248,11 @@ body.dark #toggler--slider {
     padding-left: 0;
   }
 
-  #qualifications--list {
-    .certificate {
-      max-width: 180px;
-    }
-  }
+  // #qualifications--list {
+  //   .certificate {
+  //     max-width: 180px;
+  //   }
+  // }
 
   h1,
   h2,
